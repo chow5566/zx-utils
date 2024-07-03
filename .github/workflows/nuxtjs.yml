@@ -24,10 +24,10 @@ jobs:
         run: pnpm install
 
       - name: 构建项目
-        run: pnpm run build
+        run: pnpm run generate
 
       - name: 搞到pages里
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .output/public
+          publish_dir: dist
