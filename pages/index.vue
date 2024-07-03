@@ -37,7 +37,8 @@
 </script>
 
 <template>
-  <div class="w-[500px] mx-auto mt-10">
+  <div class="w-[500px] mx-auto mt-6">
+    <h3 class="text-3xl font-bold mb-4 text-center">在线生成身份证</h3>
     <el-form :model="form" label-width="auto" :rules="rules">
       <el-form-item label="选择地区" prop="areaCode">
         <client-only>
@@ -74,7 +75,9 @@
         <el-input-number v-model="form.num" :min="1" :max="100" class="!w-full" />
       </el-form-item>
       <el-form-item>
-        <el-button type="primary" @click="generateIdCard">生成身份证</el-button>
+        <div class="w-full flex justify-center items-center">
+          <el-button type="primary" @click="generateIdCard">生成身份证</el-button>
+        </div>
       </el-form-item>
     </el-form>
 
