@@ -12,6 +12,7 @@
             <div class="text-[12px] text-gray-500">仅供内部测试使用，请勿外传</div>
           </div>
         </RouterLink>
+      <a href="http://39.101.132.61/">备用线路</a>
     </header>
     <slot></slot>
   </div>
