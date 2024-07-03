@@ -4,7 +4,6 @@
       <NuxtLayout>
         <NuxtPage />
       </NuxtLayout>
-
     </el-config-provider>
   </div>
 </template>
