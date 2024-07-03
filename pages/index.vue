@@ -38,7 +38,7 @@
 
 <template>
   <div class="w-[500px] mx-auto mt-6">
-    <h3 class="text-3xl font-bold mb-4 text-center">在线生成身份证</h3>
+    <h3 class="text-3xl font-bold mb-4 text-center">在线生成身份证号</h3>
     <el-form :model="form" label-width="auto" :rules="rules">
       <el-form-item label="选择地区" prop="areaCode">
         <client-only>
