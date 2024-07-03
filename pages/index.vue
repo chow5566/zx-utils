@@ -41,7 +41,7 @@
     <h3 class="text-3xl font-bold mb-4 text-center">在线生成身份证号</h3>
     <el-form :model="form" label-width="auto" :rules="rules">
       <el-form-item label="选择地区" prop="areaCode">
-<!--        <client-only>-->
+        <client-only>
           <el-cascader
               class="!w-full"
               :props="areaCascadeProps"
@@ -50,10 +50,10 @@
               :clearable="false"
               v-model="form.areaCode">
           </el-cascader>
-<!--        </client-only>-->
+        </client-only>
       </el-form-item>
       <el-form-item label="出生日期" prop="birthday">
-<!--        <client-only>-->
+        <client-only>
           <el-date-picker
               class="!w-full"
               v-model="form.birthday"
@@ -61,15 +61,15 @@
               type="year"
               placeholder="出生日期"
           />
-<!--        </client-only>-->
+        </client-only>
       </el-form-item>
       <el-form-item label="性别" prop="gender">
-<!--        <client-only>-->
+        <client-only>
           <el-radio-group v-model="form.gender" class="!w-full">
             <el-radio value="male" border>男</el-radio>
             <el-radio value="female" border>女</el-radio>
           </el-radio-group>
-<!--        </client-only>-->
+        </client-only>
       </el-form-item>
       <el-form-item label="数量" prop="num">
         <el-input-number v-model="form.num" :min="1" :max="100" class="!w-full" />
